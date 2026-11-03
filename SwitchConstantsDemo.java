@@ -1,0 +1,15 @@
+public class SwitchConstantsDemo {
+    public static void main(String[] args) {
+        int examScore = 85;
+        String category;
+
+        switch (examScore) {
+            case 90, 85, 80 -> category = "Відмінник";
+            case 75, 70 -> category = "Добре";
+            case 60, 65 -> category = "Задовільно";
+            default -> category = "Не склав";
+        }
+
+        System.out.println("Категорія студента: " + category);
+    }
+}
